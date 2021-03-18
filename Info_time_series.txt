@@ -1,0 +1,9 @@
+Transformações em Séries Temporais -
+
+- Transformar em estacionária (Distribuição Normal) - Jupyter 006
+- Testes de série estacionária
+	- KPSS (Kwiatkowski-Phillips-Schmidt-Shin) - Estacionaria com Sazonalidade
+	- ADF (Augmented Dickey Fuller) - Estacionária por diferenciação.
+- Aplicar Box-Cox e deixar que a função dê o melhor valor para lambda.
+
+- Smoothing - Jupyter 007

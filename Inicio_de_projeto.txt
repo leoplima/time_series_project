@@ -1,0 +1,41 @@
+********** PASSO-A-PASSO BÁSICO PARA CRIAÇÃO DE REPO NO GITHUB *************
+
+1 - Criar repositório no github (repo remoto)
+
+2 - Criar a pasta do projeto na máquina (repo local)
+
+3- Na pasta do projeto local, iniciar e configura o git e clonar o repo remoto
+	- git init
+	- git config --global user.name "Nome Sobrenome" (Caso não tenha sido configurado)
+	- git config --global user.email "seu@email.com" (Caso não tenha sido configurado)
+	- git clone "https://github.com/gbgelado/meu-primeiro-repositorio.git"
+
+4- Para criar uma nova branch a partir da que você está.
+	- git checkout -b nova_branch
+
+4 - Entrar na pasta do projeto (local) e criar uma VENV.
+	- virtualenv nome_da_env
+	- nome_da_env/scripts/activate
+	- para desativar: deactivate
+
+5 - Após escrever o código, atualizar repo local e remoto
+	- git add .
+	- git commit -m "meu primeiro commit"
+	- git push -u origin master
+
+
+6- Atualizar o repo local (entendendo que o repo remoto está mais atualizado).
+	- git pull repo_remoto.git master
+	- 
+
+-------------------------------------------------
+********** PASSO-A-PASSO BÁSICO GERAÇÃO DE PACOTES (DEPENDENCIAS) *************
+
+1- Comando para gerar uma lista com os pacotes instalados no projeto (VENV).
+	- pip freeze > requirements.txt
+
+2- Arquivo que tem todos os pacotes instalados.
+	- requirements.txt
+
+3 - Para instalar os pacotes do projeto em outras máquinas.
+	- pip install -r requirements.txt
